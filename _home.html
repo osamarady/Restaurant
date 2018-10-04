@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="" name="description"/>
+        <meta content="Osama Rady" name="author"/>
+        <!-- Chrome, Firefox OS and Opera -->
+    	<meta name="theme-color" content="#35c2f8" />
+    	<!-- Windows Phone -->
+    	<meta name="msapplication-navbutton-color" content="#35c2f8" />
+    	<!-- iOS Safari -->
+    	<meta name="apple-mobile-web-app-status-bar-style" content="#35c2f8" />
+    	<!-- Status Bar For iOS Safari -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#35c2f8">
+        <!-- Page Title For iOS Safari -->
+		<meta name="apple-mobile-web-app-title" content="AppTitle">
+        <!-- Page Title -->
+        <title>Restaurant</title>
+		
+		<!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- My Custom Style -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- FavIcon -->
+        <link rel="shortcut icon" href="images/Favicon.png" />
+		<!-- iOS Safari -->
+		<link rel="apple-touch-icon" href="images/Favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+        <style>
+            /**/
+            .menu{
+                background-color: #e74c3c;
+                display: inline-block;
+                color: #fff;/*
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;*/
+                box-shadow: 5px 1px 10px #ccc;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: 18px;
+                padding: 0 !important;
+            }
+
+            .menu ul li{
+                cursor: pointer;
+                transition: all .3s ease-in-out
+            }
+
+            .menu ul li:hover{background-color: #c0392b;}
+
+            .menu ul li.active{
+                background-color: #c0392b;
+            }
+            .newtbl{
+                background-color: #74b9ff;
+                border: none;
+                color: #fff;
+                padding: 15px 30px;
+                transition: all .5s ease-in-out;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            .oldtbl{
+                background-color: #ff7675;
+                border: none;
+                color: #fff;
+                padding: 15px 30px;
+                transition: all .5s ease-in-out;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            .newtbl:hover{
+                background-color: #0984e3
+            }
+            .oldtbl:hover{
+                background-color: #d63031
+            }
+            .cont{position: relative;}
+            .cont .overlay{
+                position: absolute;
+                top: 60%;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                color: #fff;
+                text-align: center;
+                vertical-align: middle;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(214, 48, 49,0.8);
+                transition: all .5s ease-in-out
+            }
+            .cont:hover .overlay{background-color: rgba(214, 48, 49,1);}
+            .fixed-down{
+                position: fixed;
+                bottom: 10px;
+                width: 80%;
+                background-color: ;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="row">
+        <aside class="col-md-2 menu">
+           <div class="p-5 bg-light">
+               <!--<i class="fa fa-bars text-dark"></i>-->
+               <img src="images/logo.png" alt="" class="img-fluid" width="150">
+           </div>
+            <ul class="list-unstyled">
+                <li class="p-2 px-5 active">Starters</li>
+                <li class="p-2 px-5">With Your Drink</li>
+                <li class="p-2 px-5">Salads</li>
+                <li class="p-2 px-5">Soups</li>
+                <li class="p-2 px-5">Sushi</li>
+                <li class="p-2 px-5">Desserts</li>
+                <li class="p-2 px-5">With Your Drink</li>
+                <li class="p-2 px-5">Salads</li>
+                <li class="p-2 px-5">Soups</li>
+                <li class="p-2 px-5">Sushi</li>
+                <li class="p-2 px-5">Desserts</li>
+            </ul>
+        </aside>
+        <article class="col-md-10">
+            <section class="container text-center pt-5">
+                <!--<div>
+                    <img src="images/quick_table_management.png" class="img-fluid" alt="" width="200">
+                </div>
+                <p></p>
+                <div class="pt-5">
+                    <button class="newtbl" type="button">New Table</button>
+                    <button class="oldtbl" type="button">Old Table</button>
+                </div>-->
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                        <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                            <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                            <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                            <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                            <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                            <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                            <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="cont">
+                            <img src="images/sandwitch.jpg" alt="" class="img-fluid rounded">
+                            <div class="overlay">
+                               <div>
+                                   <h5>Super Crunchy Chicken</h5><span>33EGP</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fixed-down card p-2 shadow-sm rounded">
+               <div class="row">
+                   <div class="col-md-6">
+                       
+                        <button class="newtbl">finish</button>
+                        <button class="oldtbl">viewer</button>
+                   </div>
+                   <div class="col-md-6 text-right">
+                       
+                    <button class="newtbl">total price</button>
+                    <button class="oldtbl">complemon</button>
+                   </div>
+               </div>
+            </section>
+        </article>
+    </div>
+       <!-- JQuery -->
+       <script src="js/jquery-3.2.1.min.js"></script>
+       <!--Bootstrap-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	   <script src="js/bootstrap.min.js"></script>
+       <!-- My Custom Script -->
+       <script src="js/script.js"></script>
+       
+    </body>
+</html>

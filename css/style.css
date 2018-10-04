@@ -1,0 +1,111 @@
+/*golbal style*/
+*::focus{outline: 0 !important}
+body{font-family: 'Roboto', sans-serif;}
+a{text-decoration: none !important}
+.bg-table{
+    background-image: url('../images/bg_table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.btn-defualt{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+.btn-defualt-small{
+    padding: 5px 10px;
+}
+.home-left-arrow{position: absolute;top: 20px;left: 20px;}
+.btn-defualt:hover{background-color: #fff;color: #d63031}
+#homefullS{
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+}
+#homefullS .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 48, 49,0.8);
+}
+.logo{transition: all .5s ease-in-out}
+.logo:hover{transform: scale(1.1);}
+
+.cont{position: relative;cursor: pointer}
+.cont .overlay{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(214, 48, 49,0.8);
+    transition: all .5s ease-in-out
+}
+.cont .price-overlay{
+    padding: 3px;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(214, 48, 49,1);
+    transition: all .5s ease-in-out
+}
+.hard-bg{
+    background-image: url("../images/87847-OIB87T-160.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+.hard-bg-cover{
+    background-image: url("../images/Asset%201.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+.page{background-color: #eee;border: 1px solid #ccc}
+.complaint{position: relative;}
+.c-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(214, 48, 49,0.4);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    transition: all .5s ease-in-out
+}
+.c-overlay:hover{background-color: rgba(214, 48, 49,0.8);}
+.top-bar{
+    background-image: url("../images/lefteris-kallergis-524479-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px
+}
+.top-bar-food{background-image: url("../images/mcdelivery_new11.jpg");}
+.top-bar-cart{background-image: url("../images/ubereatsFB.0.jpg");}
+.top-bar .overlay{
+    background-color: rgba(0, 0, 0,0.5);
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
